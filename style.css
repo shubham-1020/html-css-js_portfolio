@@ -146,14 +146,14 @@ section {
 .section-container {
   display: flex;
   gap: 4rem;
-  height: 80%;
+  height: 75%;
 }
 
 /* PROFILE SECTION */
 
 #profile {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 5rem;
   height: 80vh;
 }
@@ -168,6 +168,7 @@ section {
 .section-text {
   align-self: center;
   text-align: center;
+  margin-bottom: 10rem;
 }
 
 .section-text p {
@@ -204,8 +205,7 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
-  margin: 0px;
-  justify-items: left;
+  /* justify-items: center; */
 }
 
 /* BUTTONS */
@@ -262,7 +262,7 @@ section {
 }
 
 .about-containers {
-  gap: 2rem;
+  /* gap: 2rem; */
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -292,14 +292,25 @@ section {
   flex: 1;
   background: white;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 1px solid;
+  border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+}
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
 }
 
 /* Experience */
 #experience {
   position: relative;
+
 }
 
 .experience-sub-title {
@@ -319,8 +330,9 @@ section {
   display: flex;
   text-align: initial;
   flex-wrap: wrap;
+  flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 article {
@@ -337,6 +349,7 @@ article .icon {
 /* projects section */
 #projects {
   position: relative;
+  /* height: 100vh; */
 }
 
 .color-container {
@@ -348,7 +361,9 @@ article .icon {
   border-radius: 2rem;
   height: 90%;
   width: 90%;
+  margin-left: 15px;
 }
+
 
 .project-title {
   margin: 1rem;
@@ -366,19 +381,19 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
-  margin: 2rem;
+  /* margin: 2rem; */
 }
 
 .contact-info-upper-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
-  margin: 20rem auto;
+  margin: 2rem auto;
   padding: 0.5rem;
-  width: fit-content;
+
 }
 
 .contact-info-container {
@@ -411,31 +426,3 @@ footer p {
   text-align: center;
 }
 
-/* //////////////////////////////////////// */
-/* Mobile Styles */
-
-/* Adjustments for smaller screens */
-@media screen and (max-width: 412px) {
-  body {
-    margin: 0; /* Reset body margin for smaller screens */
-    align-items: center;
-    justify-content: center;
-    
-  }
-
-  .profile-section{
-    /* align-items: center; */
-    /* display: flex; */
-    margin-left: 60vh ;
-
-  }
-  #burger-nav{
-    display: flex;
-    justify-content: space-around;
-    gap: 30vh;
-  }
-  .hamburger-icon{
-    justify-content: space-between;
-    align-items: center;
-  }
-}
