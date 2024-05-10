@@ -160,8 +160,8 @@ section {
 
 .section-pic-container img {
   display: flex;
-  height: 50vh;
-  width: 50vh;
+  height: 40vh;
+  width: 40vh;
   margin-top: 10vh;
 }
 
@@ -265,6 +265,7 @@ section {
   /* gap: 2rem; */
   margin-bottom: 2rem;
   margin-top: 2rem;
+  gap: 1rem;
 }
 
 .about-details-container {
@@ -279,6 +280,7 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+
 }
 
 .arrow {
