@@ -15,10 +15,10 @@
   
   @media screen and (max-width: 1200px) {
     #desktop-nav {
-      display: none;
+      display: none !important;
     }
-    #hamburger-nav {
-      display: flex;
+    #burger-nav {
+      display: flex !important;
     }
     #experience,
     .experience-details-container {
@@ -49,6 +49,14 @@
   }
   
   @media screen and (max-width: 600px) {
+
+    #desktop-nav {
+        display: none !important;
+      }
+      #hamburger-nav {
+        display: flex !important;
+      }
+
     #contact,
     footer {
       height: 40vh;
@@ -76,14 +84,20 @@
     .about-pic{
         margin-top: 0rem;
     }
+    .about-containers{
+        gap: 1rem;
+
+    }
 
     .about-containers,
     .contact-info-upper-container,
     .btn-container {
       flex-wrap: wrap;
+
     }
     .about-containers{
         margin-top: 1rem;
+        gap: 1rem;
     }
     .contact-info-container {
       margin: 0;
